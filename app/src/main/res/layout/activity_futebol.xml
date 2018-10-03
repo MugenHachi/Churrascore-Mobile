@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context="com.example.a743602.churrascore.Truco"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:context="com.example.a743602.churrascore.Truco"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time 1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="32dp"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="64dp"
+                    android:background="@color/colorAccent"
+                    android:layout_marginTop="16dp"
+                    android:text="0"
+                    android:id="@+id/Team1Score"
+                    android:textSize="70sp"
+                    android:textAlignment="center"
+                    android:padding="42dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/vitorias"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time 2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="32dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="64dp"
+                    android:background="@color/colorAccent"
+                    android:layout_marginTop="16dp"
+                    android:text="0"
+                    android:id="@+id/Team2Score"
+                    android:textSize="70sp"
+                    android:textAlignment="center"
+                    android:padding="42dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="64dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/vitorias"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adicionar pontos:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:id="@+id/ScorePlus1"
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:paddingVertical="12dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="-1"
+                android:id="@+id/ScoreMinus1"
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="64dp"
+                android:layout_weight="1"
+                android:paddingVertical="12dp"
+                />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=">"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="24dp"
+                    android:indeterminateTint="#000000"
+                    android:max="100"
+                    android:progressTint="#000000"></SeekBar>
+            </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

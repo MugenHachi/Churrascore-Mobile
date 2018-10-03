@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChurraScore</string>
+    <string name="vitorias">Vitorias: 0</string>
+    <string name="adicionar_pontos">Adicionar Pontos:</string>
+    <string name="title_activity_pebolim">Pebolim</string>
+    <string name="title_activity_futebol">Futebol</string>
+</resources>
