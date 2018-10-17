@@ -1,10 +1,13 @@
 package com.example.quatro.churrascore
 
+import android.content.Intent
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.EditText
 import kotlinx.android.synthetic.main.activity_pebolim.*
 import kotlinx.android.synthetic.main.activity_truco.*
+import kotlinx.android.synthetic.main.activity_truco.view.*
 
 class Truco : AppCompatActivity() {
 
@@ -118,12 +121,18 @@ Team2ScoreTru.setOnClickListener() {
             team1Wins++
             Team1Wins.text = "Vitorias: " + team1Wins.toString()
             Team1ScoreTru.text = team1Score.toString()
+            var vitoria = Intent(this, VitoriaActivity::class.java)
+            vitoria.putExtra("time", "Time 1")
+            startActivity(vitoria)
         }
         if(team2Score >= 12) {
             team2Score = 0
             team2Wins++
             Team2Wins.text = "Vitorias: " + team2Wins.toString()
             Team2ScoreTru.text = team2Score.toString()
+            var vitoria = Intent(this, VitoriaActivity::class.java)
+            vitoria.putExtra("time", "Time 2")
+            startActivity(vitoria)
         }
     }
 }
